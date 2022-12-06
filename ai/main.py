@@ -152,12 +152,7 @@ def main(company, year, prediction_days, unit, dropouts, epoch, batchSize, targe
     print (f"Prediction: {prediction}")
 
 if __name__ == '__main__':
-
-
-    
-    targetCompany_array = ["AAPL","MSFT","WMT","TSLA","META","MSFT","KO","XOM","NVDA","JPM","BRK","CVS","MCK","V","CVX","ORCL","MCD"]
-    for x in targetCompany_array:
-        main(company="PFE",year=1985,prediction_days=15,unit=192,dropouts=0.5,epoch=65,batchSize=64,targetCompany=x)
+    main(company="PFE",year=1985,prediction_days=15,unit=192,dropouts=0.5,epoch=65,batchSize=64,targetCompany=x)
 
     '''
     prediction_days_array = [15, 45, 60, 75, 90]
